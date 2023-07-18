@@ -7778,6 +7778,7 @@ h1, h2, h3, h4, h5,
       color: #000000; }
   .destination:hover .icon {
     opacity: 1; }
+    /* text box on images */
   .destination .text-block,
   .destination .text-blocks,
   .destination .text-blocker{
@@ -7796,6 +7797,7 @@ h1, h2, h3, h4, h5,
   .destination .text-blocks{
     background-color: rgba(249, 81, 0, 0.9);
   }
+  /* end of text box */
   .destination .text {
     border: 1px solid #e6e6e6;
     border-top: 1px solid transparent;
