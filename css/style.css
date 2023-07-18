@@ -7778,6 +7778,24 @@ h1, h2, h3, h4, h5,
       color: #000000; }
   .destination:hover .icon {
     opacity: 1; }
+  .destination .text-block,
+  .destination .text-blocks,
+  .destination .text-blocker{
+      position: absolute;
+      top: 0;
+      left: 15px;
+      height: 6%;
+      background-color: rgba(75, 198, 152, 0.9);
+      color: #fff;
+      padding: 1px;
+      font-size: 16px;
+  }
+  .destination .text-blocker{
+    background-color: rgba(4, 81, 164, 0.9);
+  }
+  .destination .text-blocks{
+    background-color: rgba(249, 81, 0, 0.9);
+  }
   .destination .text {
     border: 1px solid #e6e6e6;
     border-top: 1px solid transparent;
