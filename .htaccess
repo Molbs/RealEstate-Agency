@@ -1,15 +1,19 @@
 RewriteEngine On
 RewriteBase /
+DirectoryIndex cars.html
 
-# Redirect "/home.html" to "/"
-RewriteRule ^home\.html$ / [R=301,L]
+# Redirect requests for "home.html" to the root directory
+# RewriteRule ^home\.html$ / [R=301,L]
 
-# Redirect requests without extension to ".html" file
+# Redirect requests for "home.php" to the root directory
+# RewriteRule ^home\.php$ / [R=301,L]
+
+# Remove ".html" extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
+RewriteRule ^(.*)$ $1.html [L]
 
-# Redirect requests without extension to ".php" file
+# Remove ".php" extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^/]+)/?$ $1.php [L]
+RewriteRule ^(.*)$ $1.php [L]
