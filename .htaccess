@@ -1,12 +1,12 @@
 RewriteEngine On
 RewriteBase /
-DirectoryIndex cars.html
+DirectoryIndex home.html
 
 # Redirect requests for "home.html" to the root directory
-# RewriteRule ^home\.html$ / [R=301,L]
+RewriteRule ^home\.html$ / [R=301,L]
 
 # Redirect requests for "home.php" to the root directory
-# RewriteRule ^home\.php$ / [R=301,L]
+RewriteRule ^home\.php$ / [R=301,L]
 
 # Remove ".html" extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
