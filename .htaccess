@@ -1,9 +1,9 @@
 RewriteEngine On
 RewriteBase /
-DirectoryIndex home.html
+# DirectoryIndex home.html
 
 # Redirect requests for "home.html" to the root directory
-RewriteRule ^home\.html$ / [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
 
 # Redirect requests for "home.php" to the root directory
 RewriteRule ^home\.php$ / [R=301,L]
