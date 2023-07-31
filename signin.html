@@ -6,6 +6,8 @@
     <title>Sign In | UrbanTop</title>
     <link rel="stylesheet" href="css/signin.css">
     <link rel="shortcut icon" href="images/urbanLogo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <script src="https://use.fortawesome.com/1ce05b4b.js"></script>
 </head>
 <body>
     <div class="login-box">
@@ -14,6 +16,7 @@
             <p>We are happy to have you back!</p>
         </div>
         <div class="input-box">
+        <form action="">
             <input type="text" class="input-field" id="email" autocomplete="off" required>
             <label for="email">Email or phone</label>
         </div>
@@ -33,6 +36,7 @@
         <div class="input-box">
             <input type="submit" class="input-submit" value="Sign In">
         </div>
+    </form>
         <div class="middle-text">
             <hr>
             <p class="or-text">Or</p>
@@ -43,11 +47,14 @@
                  <p>Sign In with Google</p>
             </button>
             <button class="input-twitter">
-                <img src="images/twitter.png" alt="">
+                <img src="images/facebook.png" alt="">
             </button>
         </div>
         <div class="sign-up">
             <p>Don't have account <a href="#">Sign up</a></p>
+        </div>
+        <div class="take-me-back">
+            <p><a href="javascript:window.history.back()"><i class="fas fa-arrow-left"></i> Take me back</a></p>
         </div>
     </div>
 </body>

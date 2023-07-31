@@ -143,6 +143,7 @@ button{
     padding: 0 30px;
     background: #FFF;
     border: 1px solid #CCC;
+    transition: 0.5s ease;
 }
 .input-google img{
     width: 25px;
@@ -158,14 +159,17 @@ button{
     height: 50px;
     background: #EEE;
     border: none;
+    transition: 0.5s ease;
 }
 .input-twitter img{
-    width: 20px;
+    width: 35px;
 }
 .input-google:hover,
 .input-twitter:hover,
 .input-submit:hover{
     opacity: 0.9;
+    background: #008f8b;
+    color: #FFF;
 }
 .sign-up{
     position: absolute;
@@ -173,11 +177,35 @@ button{
     right: 0;
 }
 .sign-up p{
-    font-size: 14px;
+    font-size: 18px;
     color: #333;
 }
 .sign-up p>a{
     text-decoration: none;
+}
+.take-me-back{
+    position: absolute;
+    bottom:-30px ;
+    left: 0;
+    transition: 0.5s ease;
+}
+.take-me-back p a {
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-size: 18px;
+    color: #333;
+}
+.take-me-back a i{
+    transition: 0.5s ease;
+    font-size: 18px;
+    color: #008f8b;
+}
+.take-me-back a i:hover {
+    transform: translateX(-5px);
+}
+.take-me-back p{
+    font-size: 16px;
+    color: #008f8b;
 }
 @media only screen and (max-width: 510px){
     .login-box{
